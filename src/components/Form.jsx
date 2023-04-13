@@ -11,8 +11,6 @@ export const Form = ({ pacients, setPacients, pacient, setPacient }) => {
     const [date, setDate] = useState('');
     const [syntom, setSyntom] = useState('');
 
-
-
     useEffect(() => {
         if (Object.keys(pacient).length > 0) {
             setPet(pacient.pet)
@@ -60,8 +58,6 @@ export const Form = ({ pacients, setPacients, pacient, setPacient }) => {
             } else {
                 objectPacient.id = generateId()
                 setPacients([...pacients, objectPacient])
-
-
 
             }
             setPet('')
